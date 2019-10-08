@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT cinema (tournage+)>
+<!ELEMENT tournage (Titre,Réalisateur,Adresse,Organisme_Demandeur,Type_de_tournage,Arrondissement,Date_debut,Date_fin,xy)>
+<!ATTLIST tournage
+          num CDATA #REQUIRED>
+<!ELEMENT Titre (#PCDATA)>
+<!ELEMENT Réalisateur (#PCDATA)>
+<!ELEMENT Adresse (#PCDATA)>
+<!ELEMENT Organisme_Demandeur (#PCDATA)>
+<!ELEMENT Type_de_tournage (#PCDATA)>
+<!ELEMENT Arrondissement (#PCDATA)>
+<!ELEMENT Date_debut (#PCDATA)>
+<!ELEMENT Date_fin (#PCDATA)>
+<!ELEMENT xy (#PCDATA)>
