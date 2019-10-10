@@ -1,0 +1,20 @@
+<!--DTD pour des livres-->
+<!ELEMENT livres (livre*)>
+
+<!ELEMENT livre (titre,auteur,illustrateur,info_gen,resume)>
+	<!ELEMENT titre (#PCDATA)>
+	<!ELEMENT auteur (#PCDATA|nom_auteur|prenom_auteur)*>
+		<!ELEMENT nom_auteur (#PCDATA)>
+		<!ELEMENT prenom_auteur (#PCDATA)>
+	<!ELEMENT illustrateur (#PCDATA|nom_illus|prenom_illus)*>
+		<!ELEMENT nom_illus (#PCDATA)>
+		<!ELEMENT prenom_illus (#PCDATA)>
+	<!ELEMENT info_gen (nom_ed,lieu_ed,nb_pages,isbn,annee,code_distributeur,date_parution)>
+		<!ELEMENT nom_ed (#PCDATA)>
+		<!ELEMENT lieu_ed (#PCDATA)>
+		<!ELEMENT nb_pages (#PCDATA)>
+		<!ELEMENT isbn (#PCDATA)>
+		<!ELEMENT annee (#PCDATA)>
+		<!ELEMENT code_distributeur (#PCDATA)>
+		<!ELEMENT date_parution (#PCDATA)>
+	<!ELEMENT resume (#PCDATA)>
